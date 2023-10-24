@@ -1,0 +1,2 @@
+# statics
+Joyclub static files
