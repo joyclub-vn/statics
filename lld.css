@@ -222,7 +222,6 @@ a.fl-button {
 	}
 }
 
-body.has-page-header.woocommerce.single article>.page-content,
 body.has-page-header:not(.fl-builder) article>.page-content {
 	padding-top: 0 !important;
 }
@@ -235,7 +234,7 @@ body.has-page-header:not(.fl-builder) article>.page-content {
 }
 
 .loop-wrapper.news .post-media .thumbnail img,
-standard-post-format clearfix as-image {
+.standard-post-format .clearfix .as-image {
 	height: auto;
 	width: fit-content;
 	aspect-ratio: var(--lala-blog-aspect-ratio) !important;
@@ -299,17 +298,18 @@ standard-post-format clearfix as-image {
 .loop-wrapper.news .list-item.sticky>div,
 .loop-wrapper.news .post-article,
 .loop-wrapper.regular .sticky,
-standard-post-format clearfix as-image:hover {
+.standard-post-format .clearfix .as-image:hover {
 	border-bottom: none !important;
 	box-shadow: none !important;
 	-moz-box-shadow: none !important;
 	-webkit-box-shadow: none !important;
-}
-
-.loop-wrapper.news .list-item.sticky>div,
-.loop-wrapper.news .post-article {
 	transition: none;
 }
+
+/* .loop-wrapper.news .list-item.sticky>div,
+.loop-wrapper.news .post-article {
+	transition: none;
+} */
 
 .loop-wrapper.news .list-item>div,
 .portfolio-image-wrapper,
@@ -328,8 +328,8 @@ standard-post-format clearfix as-image:hover {
 
 .loop-wrapper.news .list-item header.single,
 .loop-wrapper.news .post-actions-wrapper,
-.loop-wrapper.news .post-content-meta .the-categories,
-.loop-wrapper.news .post-content-meta .vamtam-meta-tax {
+.the-categories,
+.vamtam-meta-tax {
 	padding: 0 !important;
 }
 
