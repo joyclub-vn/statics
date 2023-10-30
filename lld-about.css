@@ -1,0 +1,99 @@
+/** Why 1216px? Design để vậy. :v */
+#fullwidth>.vamtam-show-bg-image:after {
+	border-top: 8px solid #EFAA89;
+}
+
+footer {
+	border-top: 0;
+}
+
+@media screen and (min-width: 700px) {
+	body {
+		/* Hide scrolling bar because 100vw */
+		overflow-x: hidden;
+	}
+
+	#taisao,
+	#fullwidth {
+		width: 100vw;
+		position: relative;
+		left: calc(-50vw + 50%);
+	}
+
+	#fullwidth>div.fl-col-content {
+		padding: 80px calc((100vw - 1216px)/2);
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1216px) {
+	#fullwidth>div.fl-col-content {
+		padding: 80px calc(100vw*(112/1440));
+	}
+}
+
+/*.lala-container { max-width: 1216px; }*/
+.lala-col-1-2 {
+	padding-right: calc(100vw*(136/1440));
+}
+
+.lala-col-1-3 {
+	padding-left: calc(100vw*(16/1440));
+	padding-right: calc(100vw*(32/1440));
+}
+
+.lala-col-2-3 {
+	padding-left: calc(100vw*(32/1440));
+	padding-right: calc(100vw*(32/1440));
+}
+
+.lala-col-3-3 {
+	padding-left: calc(100vw*(32/1440));
+	padding-right: calc(100vw*(16/1440));
+}
+
+* .fl-row-content-wrap {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+
+.coach .fl-col-group {
+	display: flex;
+	align-items: center;
+	padding: 40px 0;
+	max-width: 1216px;
+	flex-wrap: wrap;
+}
+
+.lala-quote-top p {
+	padding-top: 16px;
+	margin-top: 16px;
+	position: relative;
+	z-index: 1;
+}
+
+.lala-quote-top p:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 4px;
+	width: 96px;
+	border-top: 3px solid rgba(206, 153, 126, 0.2);
+	/*display: block; position: relative; width: 4px; content: ''; background: #CE997E; opacity: 0.2; height: 96px; left: 47px; transform: rotate(90deg);*/
+	border-radius: 2px;
+}
+
+.lala-CEO p,
+.lala-CEO span {
+	/* Caption/All caps */
+	margin: 0;
+	font-family: var(--lala-font);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px;
+	/* identical to box height, or 133% */
+	text-transform: uppercase;
+	/* Brown 200 */
+	color: #CE997E;
+}
