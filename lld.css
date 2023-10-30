@@ -391,3 +391,36 @@ standard-post-format clearfix as-image:hover {
 	margin-top: 0 !important;
 	margin-bottom: 0 !important;
 }
+
+
+em, p i{
+	font-style: italic !important;
+}
+
+body.single-post .single-post-wrapper .post-content-outer .fl-row-fixed-width p, body.single-post .single-post-wrapper .post-content-outer .fl-row-fixed-width ul li {
+	font-size: 16px !important;
+line-height: 32px !important;
+	
+}
+
+[id^="bfb_content_"].bfb_rounded_corners a, [id^="bfb_content_"].bfb_view_sp a.bfb_btn {
+	padding: 8px 24px !important;
+	 background: var(--lala-brown) !important;
+    border-radius: 8px !important;
+    font-family: var(--lala-font) !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: var(--lala-text-size) !important;
+    line-height: 24px !important;
+    text-align: center;
+    color: #FFFFFF !important;
+    border: none !important;
+    outline: none !important;
+}
+
+[id^="bfb_content_"].bfb_view_sp a.bfb_btn svg.bfb_icon {
+	display: none !important;
+}
+.vamtam-lazyload-noparent[srcset] {
+    opacity: 1;
+}
