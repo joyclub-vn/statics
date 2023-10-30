@@ -405,3 +405,7 @@ body.single-post .single-post-wrapper .post-content-outer .fl-row-fixed-width ul
 .vamtam-lazyload-noparent[srcset] {
 	opacity: 1;
 }
+
+.jp-relatedposts {
+	max-width: 980px;
+}
