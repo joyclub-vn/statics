@@ -51,11 +51,6 @@ footer {
 	padding-right: calc(100vw*(16/1440));
 }
 
-* .fl-row-content-wrap {
-	margin-right: 0 !important;
-	margin-left: 0 !important;
-}
-
 .coach .fl-col-group {
 	display: flex;
 	align-items: center;
