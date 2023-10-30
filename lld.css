@@ -38,7 +38,7 @@
 	padding-right: 0 !important;
 }
 
-.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview .ld-status-icon {
+.learndash-wrapper .ld-status-icon {
 	margin-top: 0 !important;
 }
 
@@ -120,8 +120,7 @@ a.fl-button {
 
 /*--- END INPUT section ---*/
 /* Tag category */
-.loop-wrapper.news .post-content-meta .vamtam-meta-tax a,
-.loop-wrapper.regular .list-item .post-meta a,
+.post-meta a,
 .vamtam-meta-tax a {
 	font-size: 14px !important;
 	text-decoration: none;
@@ -131,8 +130,7 @@ a.fl-button {
 	padding: 4px 15px;
 }
 
-.loop-wrapper.news .post-content-meta .vamtam-meta-tax a:hover,
-.loop-wrapper.regular .list-item .post-meta a:hover,
+.post-meta a:hover,
 .vamtam-meta-tax a:hover {
 	text-decoration: none !important;
 	background: var(--lala-dark-earth) !important;
