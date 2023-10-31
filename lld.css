@@ -406,6 +406,14 @@ body.single-post .single-post-wrapper .post-content-outer .fl-row-fixed-width ul
 	opacity: 1;
 }
 
-.jp-relatedposts {
+.jp-relatedposts, .post-article .post-media {
 	max-width: 980px;
+	margin: 0 auto !important;
+}
+
+.meta-top {
+	display: none !important;
+}
+.meta-header-inside {
+	padding-bottom: 0 !important;
 }
