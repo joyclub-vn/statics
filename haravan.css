@@ -1,3 +1,35 @@
+:root {
+	--container-max-width: 100%;
+	--container-padding-x: 15px;
+	@media (min-width: 576px) {
+		--container-max-width: 540px;
+	}
+	@media (min-width: 768px) {
+		--container-max-width: 720px;
+	}
+	
+	@media (min-width: 992px) {
+		--container-max-width: 960px;
+	}
+	
+	@media (min-width: 1200px) {
+		--container-max-width: 1600px;
+		--container-padding-x: 35px;
+	}
+	@media (min-width: 1400px) {
+		--container-padding-x: 85px;
+	}
+
+}
+
 button {
 	border-radius: 25px !important;
+}
+.wrapper-banner-introproduct, .wrapper-banner-testimonials {
+	max-width: calc(var(--container-max-width) - calc(var(--container-padding-x)*2));
+	margin: 0 auto;
+}
+
+#home-slider .owl-dots {
+	position: relative;
 }
