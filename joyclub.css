@@ -1,0 +1,81 @@
+:root {
+	--brand-color-1: #FFD43B;
+	--brand-color-2: #27272A;
+	--jc-opacity: 1;
+	--jc-opacity-hover: 0.24;
+	--jc-opacity-active: 0.48;
+	--jc-bg-color-rgb: 255, 212, 59;
+	--jc-bg-color: var(--brand-color-1);
+	--jc-color-rgb: 39, 39, 42;
+	--jc-color: var(--brand-color-2);
+	--heading-font-family: 'Roboto Serif', 'Montserrat', sans-serif;
+	--body-font-family: 'Geologica', 'Montserrat', sans-serif;
+	@media (min-width: 576px) {
+		
+	}
+	@media (min-width: 768px) {
+		
+	}
+	
+	@media (min-width: 992px) {
+		
+	}
+	
+	@media (min-width: 1200px) {
+	}
+	@media (min-width: 1400px) {
+	}
+
+}
+html, body {
+	color: var(--jc-color);
+	font-family: var(--body-font-family);
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 170%; /* 1.4875rem */
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--heading-font-family);
+	font-style: normal;
+	font-weight: 500;
+	line-height: 170%; /* 3.4rem */
+	letter-spacing: 0.03125rem;
+}
+
+.btn-primary, .btn-secondary {
+	display: inline-flex;
+	height: 2.5rem;
+	padding: 0.59375rem 1rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	border-radius: 62.5rem;
+	color: var(--jc-color);
+}
+
+.btn-primary {
+	background-color: rgba(var(--jc-bg-color-rgb), var(--jc-opacity));
+	border-color: rgba(var(--jc-bg-color-rgb), var(--jc-opacity));
+	&:hover {
+		--jc-opacity: 0.24;
+	}
+	&:active {
+		--jc-opacity: 0.48;
+	}
+}
+
+
+.btn-secondary {
+	--jc-opacity: 0;
+	background-color: rgba(var(--jc-bg-color-rgb), var(--jc-opacity));
+	border: 2 solid var(--jc-bg-color);
+	&:hover {
+		--jc-opacity: 0.16;
+	}
+	&:active {
+		--jc-opacity: 0.32;
+	}
+}
