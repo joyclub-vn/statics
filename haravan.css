@@ -77,3 +77,6 @@ main.mainContent-theme {
 .btn-box:before {
 	content: none!important;
 }
+.product-detail .box-pro-prices .block-pro-price .pro-price-del {
+	color: #AFAFA9 !important;
+}

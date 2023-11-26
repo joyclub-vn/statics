@@ -37,7 +37,7 @@ html, body {
 	line-height: 170%; /* 1.4875rem */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, h2 > a {
 	font-family: var(--heading-font-family) !important;
 	font-style: normal;
 	font-weight: 500;
