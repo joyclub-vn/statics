@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500&family=Roboto+Serif:ital,opsz,wght@0,8..144,500;1,8..144,500&display=swap');
 :root {
 	--brand-color-1: #FFD43B;
 	--brand-color-2: #27272A;
@@ -8,8 +9,8 @@
 	--jc-bg-color: var(--brand-color-1);
 	--jc-color-rgb: 39, 39, 42;
 	--jc-color: var(--brand-color-2);
-	--heading-font-family: 'Roboto Serif', 'Montserrat', sans-serif;
-	--body-font-family: 'Geologica', 'Montserrat', sans-serif;
+	--heading-font-family: 'Roboto Serif', sans-serif;
+	--body-font-family: 'Geologica', sans-serif;
 	@media (min-width: 576px) {
 		
 	}
@@ -37,7 +38,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: var(--heading-font-family);
+	font-family: var(--heading-font-family) !important;
 	font-style: normal;
 	font-weight: 500;
 	line-height: 170%; /* 3.4rem */
@@ -60,10 +61,10 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: rgba(var(--jc-bg-color-rgb), var(--jc-opacity));
 	border-color: rgba(var(--jc-bg-color-rgb), var(--jc-opacity));
 	&:hover {
-		--jc-opacity: 0.24;
+		background-color: #ffdd6a !important;
 	}
 	&:active {
-		--jc-opacity: 0.48;
+		background-color: #ffe899 !important;
 	}
 }
 
