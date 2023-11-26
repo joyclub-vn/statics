@@ -34,3 +34,8 @@ button {
 #home-slider .owl-dots {
 	position: relative;
 }
+
+/* Navbar */
+.navigation-header:not(.hSticky-down) #main-nav-linklist .nav-linklist > .nav-bar-item > .nav-bar-link:after {
+    background-color: var(--jc-bg-color);
+}
