@@ -23,19 +23,50 @@
 
 }
 
-button {
+* {
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+button, :not(.quantity-area) > input, textarea {
 	border-radius: 62.5rem !important;
+}
+div:is(.quantity-area) > input {
+	height: 2.5rem!important;
+	&:first-child {
+		border-top-left-radius: 62.5rem !important;
+		border-bottom-left-radius: 62.5rem !important;
+	}
+	&:last-child {
+		border-top-right-radius: 62.5rem !important;
+		border-bottom-right-radius: 62.5rem !important;
+	}
+}
+.form-floating_label {
+	left: 1.5rem !important;
+}
+.form-field_text {
+	padding: 1rem 1.5rem 0.2rem !important;
 }
 img {
 	border-radius: 1rem;
+}
+a.product-gallery-item {
+	border: none !important;
 }
 .section {
 	max-width: calc(var(--container-max-width) - calc(var(--container-padding-x)*2));
 	margin: 0 auto;
 	border-radius: 1.5rem;
 }
+.owl-carousel .owl-stage-outer, .border-r-1 {
+	border-radius: 1.5rem;
+}
 main.mainContent-theme {
-    margin-top: 2.3rem;
+    margin-top: 3.5rem;
+}
+.mainContent-theme .section[class*='section-'] {
+	margin-bottom: 6.57rem !important;
 }
 
 #home-slider .owl-dots {
@@ -50,14 +81,37 @@ main.mainContent-theme {
 }
 
 /* Navbar */
-.navigation-header:not(.hSticky-down) #main-nav-linklist .nav-linklist > .nav-bar-item > .nav-bar-link:after {
-    background-color: var(--jc-bg-color) !important;
+.navigation-header #main-nav-linklist .nav-linklist > .nav-bar-item > .nav-bar-link {
+	color: var(--jc-color, #27272A);
+	font-family: Geologica;
+	font-size: 0.85714rem !important;
+	font-style: normal;
+	font-weight: 400 !important;
+	line-height: 170%; /* 1.45714rem */
+	letter-spacing: 0.03571rem;
+	text-transform: uppercase;
+	&:after {
+    	background-color: var(--jc-bg-color) !important;
+	}
+}
+.navigation-header .wrapper-header-logo {
+    padding: 0 !important;
+}
+.main-header {
+	border-bottom: none !important;
+	& .header-inner {
+		padding: 0.75rem 0rem !important;
+	}
+	& .wrap-logo a img {
+		max-width: 6.25rem;
+		max-height: unset!important;
+	}
 }
 
 .btn-box {
 	display: inline-flex;
-	height: 2.5rem!important;;
-	padding: 0.59375rem 1rem!important;;
+	height: 2.5rem!important;
+	padding: 0.59375rem 1rem!important;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
