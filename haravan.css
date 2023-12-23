@@ -65,11 +65,11 @@ a.product-gallery-item {
 .owl-carousel .owl-stage-outer, .border-r-1 {
 	border-radius: 1.5rem;
 }
-main.mainContent-theme {
+.mainContent-theme {
     margin-top: 3.5rem;
-}
-.mainContent-theme .section[class*='section-'] {
-	margin-bottom: 6.57rem !important;
+	& .section[class*='section-'] {
+		margin-bottom: 6.57rem !important;
+	}
 }
 
 #home-slider .owl-dots {
@@ -90,21 +90,23 @@ main.mainContent-theme {
 }
 
 /* Navbar */
-.navigation-header #main-nav-linklist .nav-linklist > .nav-bar-item > .nav-bar-link {
-	color: var(--jc-color, #27272A);
-	font-family: Geologica;
-	font-size: 0.85714rem !important;
-	font-style: normal;
-	font-weight: 400 !important;
-	line-height: 170%; /* 1.45714rem */
-	letter-spacing: 0.03571rem;
-	text-transform: uppercase;
-	&:after {
-    	background-color: var(--jc-bg-color) !important;
+.navigation-header {
+	& .wrapper-header-logo {
+		padding: 0 !important;
 	}
-}
-.navigation-header .wrapper-header-logo {
-    padding: 0 !important;
+	& #main-nav-linklist .nav-linklist > .nav-bar-item > .nav-bar-link {
+		color: var(--jc-color, #27272A);
+		font-family: Geologica;
+		font-size: 0.85714rem !important;
+		font-style: normal;
+		font-weight: 400 !important;
+		line-height: 170%; /* 1.45714rem */
+		letter-spacing: 0.03571rem;
+		text-transform: uppercase;
+		&:after {
+			background-color: var(--jc-bg-color) !important;
+		}
+	}
 }
 .main-header {
 	border-bottom: none !important;
@@ -117,7 +119,7 @@ main.mainContent-theme {
 	}
 }
 
-.btn {
+.btn, [class^="btn-"], [class$="-btn"]{
 	display: inline-flex;
 	height: 2.5rem!important;
 	padding: 0.59375rem 1rem!important;
@@ -129,14 +131,6 @@ main.mainContent-theme {
 }
 
 .btn-box, .checkout-btn, .step-footer-continue-btn {
-	display: inline-flex;
-	height: 2.5rem!important;
-	padding: 0.59375rem 1rem!important;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	flex-shrink: 0;
-	border-radius: 62.5rem;
 	color: var(--jc-color) !important;
 	background-color: rgba(var(--jc-bg-color-rgb), var(--jc-opacity))!important;
 	border-color: rgba(var(--jc-bg-color-rgb), var(--jc-opacity))!important;
