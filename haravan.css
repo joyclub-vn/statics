@@ -28,8 +28,11 @@
 	font-size: 14px;
 }
 
-button, :not(.quantity-area) > input, textarea {
+button, :not(.quantity-area) > input {
 	border-radius: 62.5rem !important;
+}
+textarea {
+	border-radius: 25px !important;
 }
 div:is(.quantity-area) > input {
 	height: 2.5rem!important;
@@ -108,7 +111,18 @@ main.mainContent-theme {
 	}
 }
 
-.btn-box {
+.btn {
+	display: inline-flex;
+	height: 2.5rem!important;
+	padding: 0.59375rem 1rem!important;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	border-radius: 62.5rem;
+}
+
+.btn-box, .checkout-btn, .step-footer-continue-btn {
 	display: inline-flex;
 	height: 2.5rem!important;
 	padding: 0.59375rem 1rem!important;
