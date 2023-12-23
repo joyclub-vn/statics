@@ -74,7 +74,13 @@ main.mainContent-theme {
 
 #home-slider .owl-dots {
 	position: relative;
+	& .owl-dots .owl-dot span {
+		box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.72);
+		-webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.72);
+		-moz-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.72);
+	}
 }
+
 #home-slider .slider-content-text .wrap-content-slider .title-content-slider {
 	& p,
 	& h2 {
