@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500&family=Roboto+Serif:ital,opsz,wght@0,8..144,500,600;1,8..144,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500&family=Roboto+Serif:ital,opsz,wght@0,8..144,500;1,8..144,500&display=swap');
 :root {
 	--brand-color-1: #FFD43B;
 	--brand-color-2: #27272A;
@@ -40,8 +40,8 @@ html, body {
 h1, h2, h3, h4, h5, h6, h2 > a {
 	font-family: var(--heading-font-family) !important;
 	font-style: normal;
-	font-weight: 500;
-	line-height: 170%; /* 3.4rem */
+	font-weight: 500 !important;
+	line-height: 170% !important; /* 3.4rem */
 	letter-spacing: 0.03125rem;
 }
 
