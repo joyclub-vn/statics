@@ -27,6 +27,13 @@
 	box-sizing: border-box;
 	font-size: 14px;
 }
+h1 {
+	font-size: 40px;
+}
+
+h2, h2>a {
+	font-size: 30px;
+}
 
 button, :not(.quantity-area) > input {
 	border-radius: 62.5rem !important;
@@ -147,4 +154,10 @@ a.product-gallery-item {
 }
 .product-detail .box-pro-prices .block-pro-price .pro-price-del {
 	color: #AFAFA9 !important;
+}
+
+/* disable animation on home silder */
+#home-slider .owl-item.active .slider-image img {
+    -webkit-animation: none !important;
+    animation: none !important;
 }
