@@ -1,0 +1,75 @@
+@import url("https://cdn.jsdelivr.net/gh/joyclub-vn/statics/define.min.css");
+body.login {
+    background-image: url(/wp-content/uploads/2024/10/laladay_idx_bg-scaled.webp), url(/wp-content/uploads/2024/10/laladay_idx_bg-scaled.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--lala-dark-moss);
+}
+body.login h1 a {
+    background-image: url(/wp-content/uploads/2020/06/Asset-5.png);
+    background-size: contain;
+}
+
+.login form {
+    border-radius: 10px;
+}
+.language-switcher {
+    display: none;
+}
+
+.login #backtoblog a, .login #nav a {
+    color: var(--lala-white) !important;
+    &:hover {
+        color: var(--lala-light-moss) !important;
+    }
+    &:visited {
+        color: var(--lala-light-cream) !important;
+    }
+}
+p {
+	font-size: var(--lala-text-size) !important;
+	line-height: var(--lala-text-height);
+	color: var(--lala-dark-moss) !important;
+}
+
+.input {
+	border-radius: 8px !important;
+	font-size: var(--lala-text-size) !important;
+	line-height: 20px;
+    &:hover {
+        border: 1px solid var(--lala-light-brown) !important;
+        box-shadow: 0 0 0 1px var(--lala-light-brown) !important;
+    }
+    &:focus {
+        border: 1px solid var(--lala-light-brown) !important;
+        box-shadow: 0 0 0 1px var(--lala-light-brown) !important;
+    }
+    &:focus-visible {
+        border: 1px solid var(--lala-brown) !important;
+        box-shadow: 0 0 0 1px var(--lala-light-brown) !important;
+    }
+}
+
+label {
+	font-size: var(--lala-text-size) !important;
+	line-height: 20px;
+}
+
+input.button {
+	background: var(--lala-brown) !important;
+    border: none !important;
+    &:hover {
+        background-color: var(--lala-light-earth) !important;
+    }
+    &:after {
+        background-color: var(--lala-dark-brown) !important;
+    }
+}
+.login .button.wp-hide-pw {
+    border: none !important;
+    &:focus {
+        border-radius: 8px !important;
+        border: none !important;
+        box-shadow: 0 0 0 1px var(--lala-light-brown) !important;
+    }
+}
