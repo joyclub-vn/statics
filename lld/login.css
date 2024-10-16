@@ -1,12 +1,12 @@
 @import url("https://cdn.jsdelivr.net/gh/joyclub-vn/statics/define.min.css");
 body.login {
-    background-image: url(/wp-content/uploads/2024/10/laladay_idx_bg-scaled.webp), url(/wp-content/uploads/2024/10/laladay_idx_bg-scaled.jpg);
+    background-image: url(https://laladay.vn/wp-content/uploads/2024/10/laladay_idx_bg-scaled.webp), url(https://laladay.vn/wp-content/uploads/2024/10/laladay_idx_bg-scaled.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--lala-dark-moss);
 }
 body.login h1 a {
-    background-image: url(/wp-content/uploads/2020/06/Asset-5.png);
+    background-image: url(https://laladay.vn/wp-content/uploads/2020/06/Asset-5.png);
     background-size: contain;
 }
 
